@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<title>Confronto - StrumentiAI</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="/css/style.min.css?_v=20260305125524">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<meta name="description" content="Confronta strumenti di intelligenza artificiale: prezzi, categorie e alternative aggiornate." />
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo-new.svg" alt="Logo AI"></a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu" aria-label="Apri menu"><span></span></button>
+					<nav class="menu__body" aria-label="Menu principale">
+						<ul class="menu__list">
+							<!-- Categorie with dropdown -->
+							<li class="menu__item menu__item--has-sub js-has-sub">
+								<a class="menu__link" href="/categorie.html" aria-haspopup="true" aria-expanded="false" aria-controls="sub-categories">
+									Categorie
+								</a>
+
+								<button class="menu__toggle" aria-label="Apri sottomenu" aria-expanded="false" aria-controls="sub-categories"></button>
+
+								<ul id="sub-categories" class="menu__sublist" role="menu">
+									<li role="none"><a role="menuitem" href="/chatbot.html">Chatbot</a></li>
+									<li role="none"><a role="menuitem" href="/immagine.html">Immagine</a></li>
+									<li role="none"><a role="menuitem" href="/video.html">Video</a></li>
+									<li role="none"><a role="menuitem" href="/audio.html">Audio</a></li>
+									<li role="none"><a role="menuitem" href="/coding.html">Coding</a></li>
+									<li role="none"><a role="menuitem" href="/produttivita.html">Produttività</a></li>
+								</ul>
+							</li>
+
+							<li class="menu__item"><a class="menu__link" href="/strumenti.html">Tutti Strumenti</a></li>
+							<!-- <li class="menu__item"><a class="menu__link" href="/top">Top Tools</a></li>
+          <li class="menu__item"><a class="menu__link" href="/submit">Invia uno tool</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<nav class="breadcrumb">
+				<ul class="breadcrumbs__container">
+					<li><a href="/">Home</a><span class="sep">&nbsp;›</span></li>
+					<li> <a href="/strumenti.html">Tutti gli strumenti</a><span class="sep">&nbsp;›</span></li>
+					<li> <span id="bc-current">Confronto</span></li>
+				</ul>
+			</nav>
+
+			<section class="card hero">
+				<div class="hero__container">
+					<div class="header">
+						<h1 id="toolTitle" class="h1">Confronto</h1>
+						<img id="toolLogo" src="" alt="" width="80" height="80" style="border-radius:16px;border:1px solid var(--line);object-fit:cover" />
+						<p id="toolSubtitle" class="subtitle"></p>
+						<div style="display:flex;gap:8px;align-items:center; margin-top: 10px;">
+							<a id="visitBtn" class="btn" target="_blank" rel="sponsored noopener">Visita</a>
+							<a href="/" class="btn">Torna alla home</a>
+						</div>
+					</div>
+
+					<div class="grid cols-2 compare-panels" style="margin-top:14px">
+						<!-- Strengths -->
+						<section class="panel">
+							<div class="panel__head">
+								<h3 class="panel__title">Punti di forza</h3>
+							</div>
+							<ul id="toolStrengths" class="panel__list"></ul>
+						</section>
+
+						<!-- Info -->
+						<section class="panel">
+							<div class="panel__head">
+								<h3 class="panel__title">Informazioni</h3>
+							</div>
+							<ul id="toolInfo" class="panel__list"></ul>
+						</section>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="alts" style="margin-top:22px">
+				<div class="alts__container">
+					<div class="section-title">
+						<h2>Alternative nella stessa categoria</h2>
+						<a id="viewAllCat" class="link" href="#">Vedi tutte</a>
+					</div>
+					<div id="alts" class="grid"></div>
+					<div id="altsEmpty" class="card empty" style="display:none">
+						Nessuna alternativa trovata.
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-text">© <span id="year"></span> StrumentiAI</div>
+				<div>
+					<!-- <a href="#">Chi siamo</a> · <a href="#">Contatti</a> · -->
+					<a href="/privacy.html">Privacy</a>
+				</div>
+			</div>
+			<script>
+				document.getElementById('year').textContent = new Date().getFullYear();
+			</script>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20260305125524"></script>
+</body>
+
+</html>

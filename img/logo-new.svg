@@ -1,0 +1,39 @@
+<svg width="260" height="64" viewBox="0 0 260 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo StrumentiAI</title>
+  <desc id="desc">Neon gradient square with letters AI and text StrumentiAI</desc>
+
+  <defs>
+    <!-- Brand gradient -->
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#58E6B6"/>
+      <stop offset="1" stop-color="#6AB7FF"/>
+    </linearGradient>
+
+    <!-- Subtle glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .badge { fill:none; stroke:url(#g); stroke-width:3; filter:url(#glow); }
+      .ai-line { fill:none; stroke:url(#g); stroke-width:3; stroke-linejoin:round; stroke-linecap:round; filter:url(#glow); }
+      .word { fill:#E9F4FF; font-family:Inter,Segoe UI,Arial,sans-serif; font-weight:700; letter-spacing:.2px; }
+      .accent { fill:url(#g); }
+    </style>
+  </defs>
+
+  <!-- Square badge -->
+  <rect class="badge" x="4" y="4" width="62" height="56" rx="12"/>
+
+  <!-- "A" outline -->
+  <path class="ai-line" d="M18 50 L32 14 L46 50 Z M26 36 H38"/>
+  <!-- "I" outline -->
+  <rect class="ai-line" x="50" y="13" width="4" height="38" rx="2"/>
+
+  <!-- Wordmark -->
+  <text class="word" x="72" y="42" font-size="28">Strumenti<tspan class="accent">AI</tspan></text>
+</svg>
