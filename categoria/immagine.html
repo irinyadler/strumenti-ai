@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<title>Immagini AI</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="/css/style.min.css?_v=20260305125524">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo-new.svg" alt="Logo AI"></a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu" aria-label="Apri menu"><span></span></button>
+					<nav class="menu__body" aria-label="Menu principale">
+						<ul class="menu__list">
+							<!-- Categorie with dropdown -->
+							<li class="menu__item menu__item--has-sub js-has-sub">
+								<a class="menu__link" href="/categorie.html" aria-haspopup="true" aria-expanded="false" aria-controls="sub-categories">
+									Categorie
+								</a>
+
+								<button class="menu__toggle" aria-label="Apri sottomenu" aria-expanded="false" aria-controls="sub-categories"></button>
+
+								<ul id="sub-categories" class="menu__sublist" role="menu">
+									<li role="none"><a role="menuitem" href="/chatbot.html">Chatbot</a></li>
+									<li role="none"><a role="menuitem" href="/immagine.html">Immagine</a></li>
+									<li role="none"><a role="menuitem" href="/video.html">Video</a></li>
+									<li role="none"><a role="menuitem" href="/audio.html">Audio</a></li>
+									<li role="none"><a role="menuitem" href="/coding.html">Coding</a></li>
+									<li role="none"><a role="menuitem" href="/produttivita.html">Produttività</a></li>
+								</ul>
+							</li>
+
+							<li class="menu__item"><a class="menu__link" href="/strumenti.html">Tutti Strumenti</a></li>
+							<!-- <li class="menu__item"><a class="menu__link" href="/top">Top Tools</a></li>
+          <li class="menu__item"><a class="menu__link" href="/submit">Invia uno tool</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<nav class="breadcrumbs" aria-label="breadcrumb">
+			<ul class="breadcrumbs__container">
+				<li><a href="/">Home</a><span class="sep">&nbsp;›</span></li>
+				<li> <a href="/categorie.html">Categorie</a><span class="sep">&nbsp;›</span></li>
+				<li> <span id="crumbCat">Immagini</span></li>
+			</ul>
+		</nav>
+
+		<!-- data-slug fallback if you don’t parse from URL -->
+		<main id="catPage" class="page category-single" data-slug="immagine">
+			<div class="main__container">
+				<section class="hero">
+					<h1 id="catTitle">Immagini AI</h1>
+					<p class="lead">Gli strumenti di immagine AI permettono di creare immagini, illustrazioni, loghi e asset grafici partendo da semplici prompt testuali. Sono ideali per designer, creator, marketer e sviluppatori che vogliono generare contenuti visivi in modo rapido ed efficiente. Grazie ai modelli di generazione immagini più avanzati, è possibile ottenere risultati realistici o artistici, personalizzare stili e iterare velocemente. In questa categoria trovi i migliori tool di immagine AI per creatività, design e contenuti digitali.</p>
+					<h2 class="catSubtitle"> A cosa servono gli strumenti di immagine AI</h2>
+					<p class="catSubtitle-text">Servono per generare immagini, concept art, poster, grafiche social, loghi e asset visivi senza competenze avanzate di design.</p>
+					<h3 class="catSubtitle">Come scegliere il miglior tool di immagine AI</h3>
+					<p class="catSubtitle-text">Valuta qualità delle immagini, controllo sullo stile, facilità di utilizzo, licenze commerciali e prezzo. Alcuni strumenti sono più artistici, altri più orientati al design pratico.</p>
+					<div class="meta">
+						<span class="badge" id="catBadge">0 strumenti</span>
+					</div>
+				</section>
+
+				<section class="card toolbar" role="region" aria-label="Strumenti di ricerca e ordinamento">
+					<input id="qTool" class="search" placeholder="Cerca nella categoria" />
+					<select id="pricingTool" class="select" aria-label="Prezzo">
+						<option value="">Tutti i prezzi</option>
+						<option>Gratis</option>
+						<option>Freemium</option>
+						<option>A pagamento</option>
+					</select>
+					<select id="sortTool" class="select" aria-label="Ordina per">
+						<option value="new">Più recenti</option>
+						<option value="pop">Popolarità</option>
+						<option value="name">Nome A–Z</option>
+					</select>
+					<div class="spacer"></div>
+					<div class="view-toggle" role="tablist" aria-label="Vista risultati">
+						<button id="viewList" class="is-active" role="tab" aria-selected="true">Lista</button>
+						<button id="viewGrid" role="tab" aria-selected="false">Griglia</button>
+					</div>
+				</section>
+
+				<section class="layout grid cols-2">
+					<div>
+						<div class="section-title">
+							<h2 id="sectionTitle">Strumenti</h2>
+							<span class="result-count" id="resultCount">Mostrati 0</span>
+						</div>
+
+						<div id="toolsList" class=""></div>
+
+						<div id="emptyState" class="card empty" style="display:none">
+							<h3 style="margin:0 0 6px">Nessun risultato</h3>
+							<p class="muted" style="margin:0">Prova a cambiare filtri o parole chiave.</p>
+						</div>
+
+						<nav class="pagination" role="navigation" aria-label="Paginazione" id="pagination" style="display:none">
+							<a class="page" href="#" data-page="prev" aria-label="Pagina precedente">‹</a>
+							<span id="pages"></span>
+							<a class="page" href="#" data-page="next" aria-label="Pagina successiva">›</a>
+						</nav>
+
+						<!-- In-article AdSense slot (optional) -->
+						<!-- <div class="ad small" style="margin-top:16px">
+                <span class="muted">Spazio pubblicitario</span>
+              </div> -->
+					</div>
+
+					<aside class="sidebar sticky">
+						<div class="card">
+							<h3 style="margin:0 0 8px">Filtra</h3>
+							<div class="filter-group">
+								<h4>Tag popolari</h4>
+								<div id="tagChips" class="chips"></div>
+							</div>
+							<div class="filter-group">
+								<label class="check"><input type="checkbox" id="onlyFree"> Solo gratis</label>
+								<label class="check"><input type="checkbox" id="newOnly"> Solo nuovi</label>
+							</div>
+							<div class="filter-group">
+								<button class="btn" id="resetFilters" style="width:100%">Reimposta filtri</button>
+							</div>
+
+							<!-- Sidebar AdSense slot -->
+							<!-- <div class="ad small" style="margin-top:12px">
+                  <span class="muted">Spazio pubblicitario</span>
+                </div> -->
+						</div>
+					</aside>
+				</section>
+				<section class="section__faq" id="faq-immagini">
+					<h2 class="catSubtitle">Faq</h2>
+					<h3 class="catSubtitle-text" id="catLead-immagini">FAQ AI Immagini: generazione, editing e design</h3>
+
+					<div data-spollers class="spollers">
+						<details class="spollers__item">
+							<summary class="spollers__title">Cos’è un generatore di immagini AI?</summary>
+							<div class="spollers__body">
+								Un generatore di immagini AI è un modello che crea immagini a partire da testo (prompt), reference o bozzetti. Può anche modificare foto esistenti con funzioni come inpainting, outpainting, upscale e rimozione oggetti.
+							</div>
+						</details>
+
+						<details class="spollers__item">
+							<summary class="spollers__title">A cosa servono le AI per immagini?</summary>
+							<div class="spollers__body">
+								Servono per grafica e creatività: concept art, post social, mockup prodotto, illustrazioni, loghi, banner, copertine, asset per e-commerce e editing rapido. Sono utili anche per migliorare qualità e risoluzione delle foto.
+							</div>
+						</details>
+
+						<details class="spollers__item">
+							<summary class="spollers__title">Qual è la migliore AI per immagini nel 2026?</summary>
+							<div class="spollers__body">
+								Dipende da stile e obiettivo: fotorealismo, illustrazione, controllo creativo o velocità. In questa categoria trovi una selezione aggiornata di generatori AI immagini con confronto su qualità, controlli, licenze e prezzi.
+							</div>
+						</details>
+
+						<details class="spollers__item">
+							<summary class="spollers__title">Le AI per immagini sono gratuite?</summary>
+							<div class="spollers__body">
+								Molte offrono crediti gratuiti o piani freemium con limiti (numero immagini, watermark, tempi). I piani premium includono più crediti, modelli migliori, output più alta qualità e diritti d’uso estesi.
+							</div>
+						</details>
+
+						<details class="spollers__item">
+							<summary class="spollers__title">Posso usare immagini AI per lavoro e pubblicità?</summary>
+							<div class="spollers__body">
+								Spesso sì, ma dipende dalla licenza dello strumento e dalle regole sull’uso commerciale. Controlla termini, attributi richiesti e policy su marchi/volti. Per brand e aziende, preferisci tool con licenze chiare e opzioni business.
+							</div>
+						</details>
+					</div>
+				</section>
+
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-text">© <span id="year"></span> StrumentiAI</div>
+				<div>
+					<!-- <a href="#">Chi siamo</a> · <a href="#">Contatti</a> · -->
+					<a href="/privacy.html">Privacy</a>
+				</div>
+			</div>
+			<script>
+				document.getElementById('year').textContent = new Date().getFullYear();
+			</script>
+		</footer>
+	</div>
+
+	<!-- JSON-LD (SEO) -->
+	<script type="application/ld+json" id="schemaCategory-immagine">
+		{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			"name": "Immagine AI",
+			"description": "Strumenti AI per generare immagini, illustrazioni, loghi, poster e asset grafici.",
+			"about": "Strumenti di Intelligenza Artificiale",
+			"url": "/categorie/immagine/",
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Home",
+						"item": "/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Categorie",
+						"item": "/categorie/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"name": "Immagine AI",
+						"item": "/categorie/immagine/"
+					}
+				]
+			}
+		}
+	</script>
+
+
+	<script src="js/app.min.js?_v=20260305125524"></script>
+</body>
+
+</html>
