@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strumenti-ai.it/sitemap.xml
