@@ -334,7 +334,7 @@
         id: 1,
         name: "ChatGPT",
         url: "https://chat.openai.com",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg",
+        logo: "https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg",
         description: "Chatbot avanzato per scrittura, coding e assistenza.",
         tags: [ "Chatbot", "Scrittura", "Produttività" ],
         pricing: "Freemium",
