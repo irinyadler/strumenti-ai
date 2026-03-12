@@ -1032,7 +1032,7 @@
         const CATEGORIES = [ {
             id: "chatbot",
             name: "Chatbot",
-            href: "/chatbot.html",
+            href: "chatbot.html",
             desc: "Assistenti conversazionali e agenti AI.",
             count: 124,
             cover: "https://picsum.photos/seed/cat1/128/128",
@@ -1040,7 +1040,7 @@
         }, {
             id: "immagine",
             name: "Immagine",
-            href: "/immagine.html",
+            href: "immagine.html",
             desc: "Generazione, editing e upsccaling di immagini.",
             count: 178,
             cover: "https://picsum.photos/seed/cat2/128/128",
@@ -1048,7 +1048,7 @@
         }, {
             id: "video",
             name: "Video",
-            href: "/video.html",
+            href: "video.html",
             desc: "Generazione video, editing e sottotitoli AI.",
             count: 86,
             cover: "https://picsum.photos/seed/cat3/128/128",
@@ -1056,7 +1056,7 @@
         }, {
             id: "audio",
             name: "Audio",
-            href: "/audio/",
+            href: "audio/",
             desc: "Sintesi vocale, riconoscimento e mastering AI.",
             count: 92,
             cover: "https://picsum.photos/seed/cat4/128/128",
@@ -1064,7 +1064,7 @@
         }, {
             id: "coding",
             name: "Coding",
-            href: "/coding.html",
+            href: "coding.html",
             desc: "Assistenti di codice, refactor e test.",
             count: 133,
             cover: "https://picsum.photos/seed/cat5/128/128",
@@ -1072,7 +1072,7 @@
         }, {
             id: "produttivita",
             name: "Produttività",
-            href: "/produttivita.html",
+            href: "produttivita.html",
             desc: "Organizzazione, automazioni e strumenti office.",
             count: 141,
             cover: "https://picsum.photos/seed/cat6/128/128",
