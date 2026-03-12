@@ -27,7 +27,7 @@ body {
   color: #e6eef6;
   line-height: 1;
   font-family: Inter;
-  font-size: .875rem;
+  font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -1125,4 +1125,5 @@ footer a {
   .privacy h3 {
     font-size: clamp(1rem ,.9578947368rem + .2105263158vw ,1.125rem)
   }
+
 }
