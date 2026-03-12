@@ -1056,7 +1056,7 @@
         }, {
             id: "audio",
             name: "Audio",
-            href: "audio/",
+            href: "audio.html",
             desc: "Sintesi vocale, riconoscimento e mastering AI.",
             count: 92,
             cover: "https://picsum.photos/seed/cat4/128/128",
