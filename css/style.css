@@ -368,7 +368,7 @@ h6 {
   border-color: #334760
 }
 .homepage .hero {
-  background: url(img/hero.webp) center no-repeat;
+  background: url(img/hero.jpg) center no-repeat;
   font-weight: 800
 }
 .homepage .hero h1 {
@@ -1127,3 +1127,4 @@ footer a {
   }
 
 }
+
