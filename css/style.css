@@ -368,7 +368,7 @@ h6 {
   border-color: #334760
 }
 .homepage .hero {
-  background: url(img/hero.png) center no-repeat;
+  background: url(img/hero.webp) center no-repeat;
   font-weight: 800
 }
 .homepage .hero h1 {
@@ -404,6 +404,14 @@ h6 {
 .muted {
   color: #9fb0c3;
   line-height: 1.1
+}
+.heading {
+  background-color: #0b131d;
+  border: 1px solid #1f2b3a;
+  border-radius: 18px
+}
+.spollers__title h4 {
+  max-width: 95%
 }
 .tag {
   display: inline-block;
