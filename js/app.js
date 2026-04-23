@@ -930,7 +930,23 @@
         popularity: 92,
         categorySlug: "produttivita",
         strengths: [ "Correzione grammaticale e stile", "Suggerimenti su tono e chiarezza", "Integrazione comoda in browser e app" ]
-    } ];
+    },
+                   {    id: 51,
+  name: "Aseity",
+  url: "https://aseity.vercel.app/",
+  logo: "https://aseity.vercel.app/favicon.ico",
+  description: "Strumento AI per la crescita personale e il self-improvement che guida l’utente nella riflessione, nella chiarezza mentale e nelle decisioni.",
+  tags: ["Crescita personale", "Mindset", "Produttività"],
+  pricing: "Freemium",
+  addedAt: "2026-05-01T10:00:00Z",
+  popularity: 65,
+  categorySlug: "produttivita",
+  strengths: [
+    "Aiuta a riflettere e chiarire pensieri",
+    "Conversazioni guidate per la crescita personale",
+    "Supporto nelle decisioni e nella consapevolezza"
+  ]
+}];
     document.addEventListener("DOMContentLoaded", () => {
         initHomepagePopular();
         initCategoryPage();
